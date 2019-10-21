@@ -63,21 +63,25 @@
 
 ### The API part
 
-* This API is created using Python, Flask and SQLite database. A virtual environment is created to run this part and all the requirements are listed in pip file. A separate script is used to create a database and do the ddl part of loading data into it. I also adding step by step working guide in a separate markdown file illustrating the API working. Please refer to running guide for this part. I also suggest to install sqlite on macOS to see the functioning and related schema of the database and you will also find this in the running_guide.md file.
+* This API is created using Python, Flask and SQLite database. A virtual environment is created to run this part and all the requirements are listed in pip file. A separate script is used to create a database and do the ddl part of loading data into it. I also adding step by step working guide in a separate markdown file illustrating the API working. Please refer to running guide for this part. I also suggest to install sqlite on macOS to see the functioning and related schema of the database and you will also find this in the running_guide.md file. The API testing is done with postman desktop client and anything similar would work.
 
 * To install sqlite on macOS using Homebrew
 > brew install sqlite
 
 >enter sqlite on your macOS terminal to enter the sqlite shell.
 
->point the .db database which will be created in the create_db.py script to the sqlite like sqlite>path/database.db
+>point the .db database which will be created in the create_db.py script to the sqlite like sqlite3>path/database.db
 
 * A specific virtual environment was created to manage dependencies and running things at one place using pyenv package of python. To download this use 
 
 >brew install pyenv
 
-* There is a requirements.txt file added to replicate the exact same dependencies on your machine without the need of specifying one after the other download. To do this after downloading this project use. I suggest to use your homedirectory to run the code. If not you can also change the os.path()
+* There is a requirements.txt file added to replicate the exact same dependencies on your machine without the need of specifying one after the other download. To do this after downloading this project use. I suggest to use your Desktop as a home folder to run the code. If not you can also change the os.path()
 
 >pip install -r requirements.txt
+
+* Download Post man API Client from the website. We will use this a lot.
+
+* *From here on we will refer running_guide for details.
 
 
