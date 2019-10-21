@@ -36,10 +36,10 @@
 ![No Event with ID 999 as seen on terminal](https://github.com/tsaaii/Vivid_Seats/blob/master/Img/no999.png)
 
 11. Lets POST using the event details as shown in the body to our gateway called /add_new
-![POST about the new tickets from seller](https://github.com/tsaaii/Vivid_Seats/blob/master/Img/POST.png)
+![POST about the new tickets from seller](https://github.com/tsaaii/Vivid_Seats/blob/master/Img/post.png)
 
 12. Lets confirm our POSTed new ticket using GET request which we did in step 8.
-![GET shows existence of our event](https://github.com/tsaaii/Vivid_Seats/blob/master/Img/POST1.png)
+![GET shows existence of our event](https://github.com/tsaaii/Vivid_Seats/blob/master/Img/post1.png)
 
 13. Lets design the PUT part. A PUT request is generally used to update a record.Our PUT request takes Event_Id, Quantity, Section, Availability as parameters and can change the quantity or availability. Lets add some tickets to an event and also delete some tickets to the request and see its performance.
 
