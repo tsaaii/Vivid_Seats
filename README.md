@@ -56,3 +56,28 @@
     * ____Payment method____ - This can be paypal vs credit vs debit card types which we can use to give some cash back deals partnering with those providers.
     * ____Promo used____ - We can have this metric to see if a particualr customer used promotion code to buy ticket. Irrespective we can give some deals to attract them to buy tickets.
 
+
+#### Entity relationship diagram on the above metrics defined.
+
+![ER Diagram](https://github.com/tsaaii/Vivid_Seats/blob/master/Img/ER-Diagram%20for%20vivid_seats.png)
+
+### The API part
+
+* This API is created using Python, Flask and SQLite database. A virtual environment is created to run this part and all the requirements are listed in pip file. A separate script is used to create a database and do the ddl part of loading data into it. I also adding step by step working guide in a separate markdown file illustrating the API working. Please refer to running guide for this part. I also suggest to install sqlite on macOS to see the functioning and related schema of the database and you will also find this in the running_guide.md file.
+
+* To install sqlite on macOS using Homebrew
+> brew install sqlite
+
+>enter sqlite on your macOS terminal to enter the sqlite shell.
+
+>point the .db database which will be created in the create_db.py script to the sqlite like sqlite>path/database.db
+
+* A specific virtual environment was created to manage dependencies and running things at one place using pyenv package of python. To download this use 
+
+>brew install pyenv
+
+* There is a requirements.txt file added to replicate the exact same dependencies on your machine without the need of specifying one after the other download. To do this after downloading this project use. I suggest to use your homedirectory to run the code. If not you can also change the os.path()
+
+>pip install -r requirements.txt
+
+
