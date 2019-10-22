@@ -21,6 +21,9 @@
 5. Now go to postman or any API testing client and test our API. Here is a sample.
 ![Sample Get request on 0.0.0.0:5000](https://github.com/tsaaii/Vivid_Seats/blob/prod/Img/ds.png)
 
-6. To run my docker image which is hosted on docker hub, use the following command.
+6. To pull and run my docker image which is hosted on docker hub, use the following command.
     >docker pull tejasuw/vivid_data_submit
+    
+    >docker run -d -p 5000:5000 tejasuw/vivid_data_submit:latest
+
 
