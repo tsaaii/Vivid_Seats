@@ -4,6 +4,7 @@
 - [x] Capturing some important metrics for a data model
 - [x] Designing a realational database model
 - [x] Writing an API with a database.
+- [x] Two branches are created in the repo. master is the main branch where development was done and its is dockerized for a sample production environment.
 
 
 #### Defining metrics which are important to capture:

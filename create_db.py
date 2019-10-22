@@ -3,7 +3,10 @@ from sqlite3 import Error
 from pathlib import Path
 home = str(Path.home())
 
-def create_connection(db_file):
+conn=sqlite3.connect('data.db')
+print(home)
+
+""" def create_connection(db_file\\\):
     conn = None
     try:
         conn = sqlite3.connect(db_file)
@@ -13,4 +16,4 @@ def create_connection(db_file):
         if conn:
             conn.close() 
 if __name__ == '__main__':
-    create_connection(home+"/Desktop/vivid_seats/data.db")
+    create_connection('root/vivid_seats/data.db') """

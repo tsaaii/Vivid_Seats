@@ -5,12 +5,8 @@ import os
 import sqlite3
 
 app = Flask(__name__)
-home = str(Path.home())
-print(home)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+home+'/Desktop/vivid_seats/data.db' 
-print('sqlite:///'+home+'/Desktop/vivid_seats/data.db' )
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-conn=sqlite3.connect(home+'/Desktop/vivid_seats/data.db',check_same_thread=False)
+conn=sqlite3.connect('App/data.db',check_same_thread=False)
 
 
 @app.route('/event_number/<string:id>/',methods=['GET'])
@@ -59,4 +55,4 @@ def update_ticket():
 
    
 if __name__ == '__main__':
-  app.run(debug=True)
+  app.run('0.0.0.0',5000, debug=True)
